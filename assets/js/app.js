@@ -8,6 +8,7 @@ createApp({
             numberOfEmails: 10,
             error: "",
             timeLeft: "",
+            title:"Create 10 emails randomly"
 
         }
     },
@@ -30,6 +31,21 @@ createApp({
 
             }
         },
+        scaleLetters(){
+            let container_h1 = document.querySelector("h1") 
+          const arrayLetters =  this.title.split("")
+        //   arrayLetters.forEach((string) => {
+        //     container_h1 += `<span class="scaleLetter"> ${string}</span>`
+        //   })
+        arrayLetters.forEach((string) => {
+            const span = document.createElement("span");
+            span.textContent = string;
+            if (string != " ") {
+                span.classList.add("scaleLetter");
+            }
+                container_h1.appendChild(span);
+          });
+        }
         // hourglasstime(){
         //     const hourglassElement = document.querySelectorAll('.hourglass_container div')
 
@@ -44,6 +60,7 @@ createApp({
         // }
     },
     mounted() {
+        this.scaleLetters()
         this.createEmails()
         // this.hourglasstime()
     },
