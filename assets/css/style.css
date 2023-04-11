@@ -7,8 +7,8 @@ body {
 
 /* color zone  */
 :root {
-    --light : #ffffff;
-    --dark : #000000;
+    --light: #ffffff;
+    --dark: #000000;
 }
 
 .my_background {
@@ -36,3 +36,32 @@ li {
 li:hover {
     transform: scale(1.1);
 }
+
+
+/* Waiting Hourglass */
+.hourglass_container i {
+    font-size: 25px;
+    color: white;
+}
+.hourglass_container > div:not(.hourglass_visible) {
+    display: none !important;
+}
+
+
+.hourglass2 {
+    animation: spin 1s linear infinite;
+}
+
+/* ANIMATION  */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    } 25% {
+        transform: rotate(180deg);
+
+    } 100% {
+        transform: rotate(180deg);
+
+    }
+} 

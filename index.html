@@ -34,9 +34,15 @@
             <div v-if="error">
                <div class="alert alert-danger">{{"Error : " + error}}</div>
             </div>
+            <div v-else-if="arrayEmails.length < 10 ">
+               <div class="hourglass_container">
+                  <div class="hourglass1"><i class="fa-solid fa-hourglass-start"></i></div>
+                  <div class="hourglass2 hourglass_visible"><i class="fa-solid fa-hourglass-half"></i></div>
+                  <div class="hourglass3"><i class="fa-solid fa-hourglass-half"></i></div>
+                </div>
+            </div>
             <div v-else>
-               <div class="email_list mt-5 fw-bold" v-show="!finishedCycle"> I'm processing the emails</div>
-               <ul class="email_list mt-5" v-show="finishedCycle">
+               <ul class="email_list mt-5" v-show="arrayEmails.length == 10">
                   <li class="fw-bold my-2" v-for="(singleEmail,index) in arrayEmails">{{singleEmail}}</li>
                </ul>
             </div>
