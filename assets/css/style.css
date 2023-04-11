@@ -15,9 +15,9 @@ body {
     width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom, #a91e1e, transparent), linear-gradient(to top, #45004a 50%, transparent);
-    background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700407197-1200x675-optimized.jpg);
+    /* background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700407197-1200x675-optimized.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 span.scaleLetter {

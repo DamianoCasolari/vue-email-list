@@ -26,7 +26,7 @@ createApp({
                     })
                     .catch(error => this.error = error.message);
 
-                console.log(`Iterazione numero ${index}`);
+                console.log(`Iterazione numero ${index}`); //dubbio sul parametro error
 
             }
         },
@@ -39,9 +39,6 @@ createApp({
             arrayLetters.forEach((string) => {
                 const span = document.createElement("span");
                 span.textContent = string;
-                // if (string != " ") {
-                //     span.classList.add("scaleLetter");
-                // }
                 container_h1.appendChild(span);
 
             });
