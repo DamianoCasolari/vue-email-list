@@ -18,14 +18,45 @@ body {
 }
 
 span.scaleLetter {
+    transition-duration: 0.5s;
+    color: #eaff06;
+    cursor:pointer;
+
+}
+span.scaleLetter2 {
+    transition-duration: 0.5s;
+    color: #1f08ea;
+    cursor:pointer;
+
+}
+span.scaleLetter3 {
+    transition-duration: 0.5s;
+    color: #08ea17;
+    cursor:pointer;
+
+}
+span.scaleLetter4 {
+    transition-duration: 0.5s;
+    color: #ea0884;
+    cursor:pointer;
+
+}
+span.scaleLetter5 {
+    transition-duration: 0.5s;
+    color: #ff0202;
+    cursor:pointer;
+
+}
+
+li {
     transition-duration: 0.3s;
 
 }
 
-.scaleLetter:hover {
-    transform: scale(1.3);
-    display: inline-block;
-    cursor: grab;
+li:hover {
+    transform: scale(1.1);
+    cursor:pointer;
+    
 }
 
 /* dimension zone  */
